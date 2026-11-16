@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+**/data/
+**/test-runtime/
+**/ACESSO*
+**/auth.json
+**/known_hosts
+*.log
+backups/
+.review_ppt/
+.publicacao_github/

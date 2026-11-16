@@ -1,0 +1,2063 @@
+[
+  {
+    "file": ".lovable/project.json",
+    "lines": 5,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": ".wrangler/deploy/config.json",
+    "lines": 1,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "AGENTS.md",
+    "lines": 15,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "bunfig.toml",
+    "lines": 7,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "components.json",
+    "lines": 22,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "docs/PLANO-CAMPO.md",
+    "lines": 18,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "docs/REVISAO-GERAL.md",
+    "lines": 61,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "docs/SIMULACAO-APRESENTACAO.md",
+    "lines": 28,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "docs/SIMULACAO-GEOGRAFIA.md",
+    "lines": 13,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "docs/TRABALHO-CAMPO.md",
+    "lines": 48,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "package.json",
+    "lines": 94,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "README.md",
+    "lines": 26,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "roadmap.md",
+    "lines": 17,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "scripts/README.md",
+    "lines": 105,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "scripts/remover-simulacoes.sql",
+    "lines": 16,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/AppHeader.tsx",
+    "lines": 81,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "AppHeader"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/ArquivarOcorrenciaDialog.tsx",
+    "lines": 84,
+    "tables": [],
+    "rpc": [
+      "arquivar_ocorrencia"
+    ],
+    "exports": [
+      "ArquivarOcorrenciaDialog"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/BotaoVoltar.tsx",
+    "lines": 24,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "BotaoVoltar"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/BuscaGlobal.tsx",
+    "lines": 115,
+    "tables": [
+      "ocorrencias",
+      "profiles"
+    ],
+    "rpc": [],
+    "exports": [
+      "BuscaGlobal"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/campo/AcoesPreventivas.tsx",
+    "lines": 564,
+    "tables": [],
+    "rpc": [
+      "atualizar_acao_campo",
+      "criar_acao_campo",
+      "planejar_acao_campo",
+      "prever_acao_campo"
+    ],
+    "exports": [
+      "AcoesPreventivas"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/campo/ArmadilhasLaboratorio.tsx",
+    "lines": 771,
+    "tables": [
+      "armadilhas_campo",
+      "laboratorio_acessos"
+    ],
+    "rpc": [
+      "gerenciar_laboratorio_campo",
+      "pode_laboratorio_campo",
+      "registrar_resultado_campo",
+      "salvar_amostra_campo",
+      "salvar_armadilha_campo"
+    ],
+    "exports": [
+      "ArmadilhasLaboratorio"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/campo/FichaTecnicaDialog.tsx",
+    "lines": 640,
+    "tables": [],
+    "rpc": [
+      "iniciar_visita_campo",
+      "retificar_ficha_campo"
+    ],
+    "exports": [
+      "FichaTecnicaDialog"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/campo/FotosCampo.tsx",
+    "lines": 44,
+    "tables": [
+      "campo"
+    ],
+    "rpc": [],
+    "exports": [
+      "FotosCampo"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/campo/MapaPreventivo.tsx",
+    "lines": 89,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "PontoPreventivo",
+      "MapaPreventivo"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/campo/RelatoriosCampo.tsx",
+    "lines": 330,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "RelatoriosCampo"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/campo/TrabalhoCampoPainel.tsx",
+    "lines": 514,
+    "tables": [],
+    "rpc": [
+      "analisar_visita_campo"
+    ],
+    "exports": [
+      "TrabalhoCampoPainel"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/CampoCep.tsx",
+    "lines": 104,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "EnderecoCep",
+      "CampoCep"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/CampoMunicipio.tsx",
+    "lines": 114,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "CampoMunicipio"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/ConfirmarAcao.tsx",
+    "lines": 18,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "AcaoConfirmavel",
+      "ConfirmarAcao"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/equipe/CadastroPessoaDialog.tsx",
+    "lines": 581,
+    "tables": [],
+    "rpc": [
+      "buscar_pessoa_identificacao"
+    ],
+    "exports": [
+      "CadastroForm",
+      "CadastroPessoaDialog"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/FiltrosMapa.tsx",
+    "lines": 350,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "FiltrosMapa"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/FinalizarAtendimentoDialog.tsx",
+    "lines": 427,
+    "tables": [
+      "atendimentos"
+    ],
+    "rpc": [],
+    "exports": [
+      "FinalizarAtendimentoDialog"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/FotoOcorrencia.tsx",
+    "lines": 41,
+    "tables": [
+      "ocorrencias"
+    ],
+    "rpc": [],
+    "exports": [
+      "useFotoUrl",
+      "FotoOcorrencia"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/HistoricoImovelDialog.tsx",
+    "lines": 89,
+    "tables": [
+      "ocorrencias"
+    ],
+    "rpc": [],
+    "exports": [
+      "HistoricoImovelDialog"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/ImovelDialog.tsx",
+    "lines": 400,
+    "tables": [],
+    "rpc": [
+      "buscar_cidadao_cpf",
+      "salvar_imovel_cidadao"
+    ],
+    "exports": [
+      "Imovel",
+      "ImovelDialog"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/IndicacaoSimulacao.tsx",
+    "lines": 7,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "IndicacaoSimulacao"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/LinhaDoTempoDialog.tsx",
+    "lines": 86,
+    "tables": [
+      "ocorrencia_eventos"
+    ],
+    "rpc": [],
+    "exports": [
+      "LinhaDoTempoDialog"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/LocalizacaoMapa.tsx",
+    "lines": 66,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/MapaOcorrencias.tsx",
+    "lines": 225,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "AgenteNoMapa",
+      "MapaProps"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/MarcaZoonoses.tsx",
+    "lines": 13,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "MarcaZoonoses"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/MenuSistema.tsx",
+    "lines": 160,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "MenuSistema"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/NotificacoesMenu.tsx",
+    "lines": 93,
+    "tables": [
+      "notificacoes"
+    ],
+    "rpc": [],
+    "exports": [
+      "NotificacoesMenu"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/NovaOcorrenciaDialog.tsx",
+    "lines": 482,
+    "tables": [
+      "ocorrencias",
+      "solicitacoes_cidadaos"
+    ],
+    "rpc": [],
+    "exports": [
+      "NovaOcorrenciaDialog"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/OcorrenciaCard.tsx",
+    "lines": 106,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "Ocorrencia",
+      "OcorrenciaCard"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/painel/AgentePainel.tsx",
+    "lines": 160,
+    "tables": [
+      "ocorrencias"
+    ],
+    "rpc": [],
+    "exports": [
+      "AgentePainel"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/painel/AlertasPainel.tsx",
+    "lines": 146,
+    "tables": [
+      "agente_localizacoes",
+      "atendimentos",
+      "ocorrencias",
+      "rotas"
+    ],
+    "rpc": [],
+    "exports": [
+      "AlertasPainel"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/painel/AuditoriaPainel.tsx",
+    "lines": 187,
+    "tables": [
+      "auditoria",
+      "profiles"
+    ],
+    "rpc": [],
+    "exports": [
+      "AuditoriaPainel"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/painel/CampanhasAdmin.tsx",
+    "lines": 222,
+    "tables": [
+      "campanhas"
+    ],
+    "rpc": [],
+    "exports": [
+      "CampanhasAdmin"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/painel/CidadaoPainel.tsx",
+    "lines": 133,
+    "tables": [
+      "ocorrencias"
+    ],
+    "rpc": [],
+    "exports": [
+      "CidadaoPainel"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/painel/EquipePainel.tsx",
+    "lines": 353,
+    "tables": [
+      "agente_localizacoes",
+      "profiles",
+      "user_roles"
+    ],
+    "rpc": [],
+    "exports": [
+      "EquipePainel"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/painel/ImoveisPainel.tsx",
+    "lines": 134,
+    "tables": [
+      "imoveis"
+    ],
+    "rpc": [
+      "criar_visita_rotina_campo"
+    ],
+    "exports": [
+      "ImoveisPainel"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/painel/MinhaRota.tsx",
+    "lines": 197,
+    "tables": [
+      "rota_itens",
+      "rotas"
+    ],
+    "rpc": [],
+    "exports": [
+      "MinhaRota"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/painel/PermissoesMunicipios.tsx",
+    "lines": 123,
+    "tables": [
+      "equipes_municipios",
+      "profiles",
+      "user_roles"
+    ],
+    "rpc": [
+      "definir_municipios_equipe"
+    ],
+    "exports": [
+      "PermissoesMunicipios"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/painel/RevisaoVisitasPainel.tsx",
+    "lines": 245,
+    "tables": [
+      "tentativas_visita"
+    ],
+    "rpc": [
+      "analisar_tentativa_visita"
+    ],
+    "exports": [
+      "RevisaoVisitasPainel"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/painel/RotasPainel.tsx",
+    "lines": 764,
+    "tables": [
+      "ocorrencias",
+      "profiles",
+      "rota_itens",
+      "rotas",
+      "user_roles"
+    ],
+    "rpc": [
+      "municipio_autorizado",
+      "salvar_planejamento_rota"
+    ],
+    "exports": [
+      "RotasPainel"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/painel/SimulacaoAdmin.tsx",
+    "lines": 115,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "SimulacaoAdmin"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/painel/SolicitacoesPainel.tsx",
+    "lines": 89,
+    "tables": [
+      "profiles",
+      "solicitacoes_cidadaos"
+    ],
+    "rpc": [],
+    "exports": [
+      "Solicitacao",
+      "useSolicitacoes",
+      "ListaSolicitacoes",
+      "SolicitacoesPainel"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/painel/SupervisorPainel.tsx",
+    "lines": 435,
+    "tables": [
+      "ocorrencias",
+      "profiles",
+      "user_roles"
+    ],
+    "rpc": [],
+    "exports": [
+      "SupervisorPainel"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/RastreioAgente.tsx",
+    "lines": 338,
+    "tables": [
+      "agente_localizacoes",
+      "profiles"
+    ],
+    "rpc": [],
+    "exports": [
+      "RastreadorOperacional",
+      "RastreioAgente"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/RegistrarTentativaDialog.tsx",
+    "lines": 122,
+    "tables": [],
+    "rpc": [
+      "registrar_visita_nao_realizada"
+    ],
+    "exports": [
+      "RegistrarTentativaDialog"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/RevisarEnderecoDialog.tsx",
+    "lines": 228,
+    "tables": [
+      "ocorrencias"
+    ],
+    "rpc": [],
+    "exports": [
+      "RevisarEnderecoDialog"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/StatusAgente.tsx",
+    "lines": 72,
+    "tables": [
+      "profiles"
+    ],
+    "rpc": [],
+    "exports": [
+      "StatusAgente"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/accordion.tsx",
+    "lines": 51,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/alert-dialog.tsx",
+    "lines": 115,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/alert.tsx",
+    "lines": 49,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/aspect-ratio.tsx",
+    "lines": 5,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/avatar.tsx",
+    "lines": 47,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/badge.tsx",
+    "lines": 32,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/breadcrumb.tsx",
+    "lines": 101,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/button.tsx",
+    "lines": 49,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/calendar.tsx",
+    "lines": 177,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/card.tsx",
+    "lines": 55,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/carousel.tsx",
+    "lines": 240,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/chart.tsx",
+    "lines": 331,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "ChartConfig"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/checkbox.tsx",
+    "lines": 26,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/collapsible.tsx",
+    "lines": 11,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/command.tsx",
+    "lines": 143,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/context-menu.tsx",
+    "lines": 186,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/dialog.tsx",
+    "lines": 104,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/drawer.tsx",
+    "lines": 98,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/dropdown-menu.tsx",
+    "lines": 188,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/form.tsx",
+    "lines": 171,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/hover-card.tsx",
+    "lines": 27,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/input-otp.tsx",
+    "lines": 73,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/input.tsx",
+    "lines": 22,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/label.tsx",
+    "lines": 21,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/menubar.tsx",
+    "lines": 228,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/navigation-menu.tsx",
+    "lines": 120,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/pagination.tsx",
+    "lines": 98,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/popover.tsx",
+    "lines": 32,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/progress.tsx",
+    "lines": 25,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/radio-group.tsx",
+    "lines": 36,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/resizable.tsx",
+    "lines": 37,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/scroll-area.tsx",
+    "lines": 44,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/select.tsx",
+    "lines": 153,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/separator.tsx",
+    "lines": 24,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/sheet.tsx",
+    "lines": 122,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/sidebar.tsx",
+    "lines": 744,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/skeleton.tsx",
+    "lines": 7,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/slider.tsx",
+    "lines": 23,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/sonner.tsx",
+    "lines": 24,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/switch.tsx",
+    "lines": 27,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/table.tsx",
+    "lines": 94,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/tabs.tsx",
+    "lines": 53,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/textarea.tsx",
+    "lines": 21,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/toggle-group.tsx",
+    "lines": 57,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/toggle.tsx",
+    "lines": 42,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/ui/tooltip.tsx",
+    "lines": 32,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/components/VerLocalizacaoButton.tsx",
+    "lines": 42,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "VerLocalizacaoButton"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/data/enderecos-simulacao.json",
+    "lines": 262,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/data/municipios-mg.json",
+    "lines": 1,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/hooks/use-campo-tecnico.ts",
+    "lines": 90,
+    "tables": [
+      "acoes_campo",
+      "amostras_campo",
+      "fichas_campo",
+      "imoveis",
+      "profiles",
+      "user_roles",
+      "visitas_campo"
+    ],
+    "rpc": [],
+    "exports": [
+      "useCampoTecnico",
+      "useEquipeCampo",
+      "useAmostrasCampo"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/hooks/use-mobile.tsx",
+    "lines": 19,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "useIsMobile"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/hooks/use-session.ts",
+    "lines": 68,
+    "tables": [
+      "profiles",
+      "user_roles"
+    ],
+    "rpc": [],
+    "exports": [
+      "useSession",
+      "useMe"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/integrations/supabase/auth-middleware.ts",
+    "lines": 111,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "requireSupabaseAuth"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/integrations/supabase/client.server.ts",
+    "lines": 69,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "supabaseAdmin"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/integrations/supabase/client.ts",
+    "lines": 69,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "supabase"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/integrations/supabase/previewAuthStorage.ts",
+    "lines": 105,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "brokeredPreviewStorage"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/integrations/supabase/types.ts",
+    "lines": 986,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "Json",
+      "Database",
+      "Tables",
+      "TablesInsert",
+      "TablesUpdate",
+      "Enums",
+      "CompositeTypes",
+      "Constants"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/admin-auditado.server.ts",
+    "lines": 23,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "criarAdminAuditado"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/apresentacao.ts",
+    "lines": 4,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "nomeApresentacao"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/auth-attacher.ts",
+    "lines": 20,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "attachSupabaseAuth"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/campo-tecnico-offline.ts",
+    "lines": 119,
+    "tables": [
+      "campo",
+      "fichas_campo"
+    ],
+    "rpc": [
+      "registrar_ficha_campo"
+    ],
+    "exports": [
+      "FotoCampo",
+      "RegistroCampoPendente",
+      "guardarRascunhoCampo",
+      "lerRascunhoCampo",
+      "enfileirarFichaCampo",
+      "filaCampo",
+      "sincronizarCampo"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/campo-tecnico.ts",
+    "lines": 390,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "AcaoCampo",
+      "VisitaCampo",
+      "FichaCampo",
+      "ArmadilhaCampo",
+      "AmostraCampo",
+      "TabelasCampo",
+      "FuncoesCampo",
+      "ATIVIDADES_CAMPO",
+      "TIPOS_IMOVEL",
+      "DEPOSITOS_CAMPO",
+      "STATUS_CAMPO",
+      "RESULTADOS_CAMPO",
+      "objetoCampo",
+      "indicadoresBairros",
+      "exportarCampoCSV",
+      "resumirFichasCampo",
+      "indicadoresOvitrampas",
+      "imprimirRelatorioCampo"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/campo.ts",
+    "lines": 201,
+    "tables": [
+      "atendimento_fotos",
+      "atendimentos",
+      "ocorrencias"
+    ],
+    "rpc": [],
+    "exports": [
+      "distanciaMetros",
+      "Posicao",
+      "obterPosicao",
+      "useOnline",
+      "cacheTarefas",
+      "RegistroPendente",
+      "filaOffline",
+      "sincronizarFila"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/data-simulacao.ts",
+    "lines": 21,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "validarDataSimulacao",
+      "hojeBrasil",
+      "exibirDataSimulacao"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/datas.ts",
+    "lines": 28,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "dataBrasileira",
+      "dataHoraBrasileira"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/endereco-localizacao.ts",
+    "lines": 50,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "EnderecoLocalizacao",
+      "extrairEndereco",
+      "buscarEnderecoLocalizacao"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/equipe.functions.ts",
+    "lines": 409,
+    "tables": [
+      "auditoria",
+      "equipes_municipios",
+      "profiles",
+      "user_roles"
+    ],
+    "rpc": [
+      "municipio_autorizado"
+    ],
+    "exports": [
+      "PapelConta",
+      "criarMembroEquipe",
+      "atualizarCadastro",
+      "redefinirSenha",
+      "gerarLinkRecuperacao"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/error-capture.ts",
+    "lines": 81,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "describeError",
+      "consumeLastCapturedError"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/error-page.ts",
+    "lines": 30,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "renderErrorPage"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/erros.ts",
+    "lines": 18,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "mensagemErro"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/filtros-mapa.ts",
+    "lines": 25,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "TODOS_MAPA",
+      "FiltrosMapa",
+      "criarFiltrosMapa"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/fotos-offline.ts",
+    "lines": 24,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "fotoOffline"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/google-maps.ts",
+    "lines": 63,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "observarErroGoogleMaps",
+      "carregarGoogleMaps",
+      "linkNavegacao",
+      "escaparHtml",
+      "iconeCirculo"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/identificador.ts",
+    "lines": 8,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "criarIdentificador"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/localidades.ts",
+    "lines": 24,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "MUNICIPIOS_MG",
+      "normalizarLocalidade",
+      "municipioMG",
+      "pesquisarMunicipios",
+      "validarMunicipio"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/lovable-error-reporting.ts",
+    "lines": 59,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "reportLovableError"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/mapa-dados.ts",
+    "lines": 60,
+    "tables": [
+      "ocorrencias",
+      "profiles",
+      "rota_itens",
+      "rotas"
+    ],
+    "rpc": [],
+    "exports": [
+      "carregarDadosMapa"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/mapas.functions.ts",
+    "lines": 286,
+    "tables": [
+      "ocorrencias"
+    ],
+    "rpc": [
+      "equipe_campo_ativa"
+    ],
+    "exports": [
+      "ResultadoGeocodificacao",
+      "geocodificarEndereco",
+      "RotaCalculada",
+      "calcularRotaReal",
+      "confirmarEnderecoOcorrencia"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/navegacao.ts",
+    "lines": 57,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "GrupoMenu",
+      "gruposPainel"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/regras-operacionais.test.ts",
+    "lines": 44,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/lib/regras-operacionais.ts",
+    "lines": 22,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "PapelOperacional",
+      "podeCriarConta",
+      "podeGerenciarConta",
+      "localizacaoDesatualizada",
+      "statusAposResultado",
+      "validarCoordenadas"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/rotas.ts",
+    "lines": 213,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "Rota",
+      "RotaItem",
+      "STATUS_ROTA_LABEL",
+      "VELOCIDADE_MEDIA_KMH",
+      "MINUTOS_POR_ATENDIMENTO",
+      "FATOR_VIARIO",
+      "PontoTarefa",
+      "distanciaKm",
+      "ordenarPorProximidade",
+      "estimativaRota",
+      "agruparTarefas",
+      "distribuirEntreAgentes",
+      "formatarDuracao",
+      "hojeISO",
+      "formatarDataCurta",
+      "tempoRelativo",
+      "COR_STATUS",
+      "corStatus"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/simulacao.functions.ts",
+    "lines": 375,
+    "tables": [
+      "agente_localizacoes",
+      "campanhas",
+      "campo",
+      "equipes_municipios",
+      "fichas_campo",
+      "ocorrencias",
+      "profiles",
+      "rota_itens",
+      "rotas",
+      "user_roles",
+      "visitas_campo"
+    ],
+    "rpc": [
+      "completar_simulacao",
+      "limpar_simulacao_completa"
+    ],
+    "exports": [
+      "gerarSimulacao",
+      "removerSimulacao"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/solicitacoes.functions.ts",
+    "lines": 20,
+    "tables": [],
+    "rpc": [
+      "converter_solicitacao",
+      "pode_analisar_solicitacoes"
+    ],
+    "exports": [
+      "converterSolicitacao"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/utils.ts",
+    "lines": 6,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "cn"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/visitas.ts",
+    "lines": 12,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "MOTIVOS_VISITA",
+      "motivoVisita",
+      "foraDaFila"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/lib/zoonoses.ts",
+    "lines": 184,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "Papel",
+      "PAPEL_LABEL",
+      "PAPEL_TONE",
+      "ehGestor",
+      "ehEquipe",
+      "SITUACOES_CONTA",
+      "CATEGORIAS_EQUIPE",
+      "somenteDigitos",
+      "cpfValido",
+      "formatarCpf",
+      "iniciais",
+      "TIPOS",
+      "tipoInfo",
+      "FOCOS",
+      "Status",
+      "STATUS_ORDEM",
+      "STATUS_LABEL",
+      "statusTone",
+      "prioridadeLabel",
+      "prioridadeTone",
+      "formatarData",
+      "STATUS_AGENTE",
+      "statusAgenteInfo",
+      "TIPOS_CAMPANHA",
+      "tipoCampanhaInfo"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/router.tsx",
+    "lines": 16,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "getRouter"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/routes/__root.tsx",
+    "lines": 155,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "Route"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/routes/_authenticated/campo-mapa.tsx",
+    "lines": 185,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "Route"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/routes/_authenticated/localizacao.tsx",
+    "lines": 177,
+    "tables": [
+      "ocorrencias"
+    ],
+    "rpc": [],
+    "exports": [
+      "Route"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/routes/_authenticated/mapa.tsx",
+    "lines": 341,
+    "tables": [
+      "agente_localizacoes"
+    ],
+    "rpc": [],
+    "exports": [
+      "Route"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/routes/_authenticated/painel.tsx",
+    "lines": 64,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "Route"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/routes/_authenticated/pessoa.tsx",
+    "lines": 176,
+    "tables": [
+      "profiles",
+      "user_roles"
+    ],
+    "rpc": [
+      "excluir_cadastro_pessoa"
+    ],
+    "exports": [
+      "Route"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/routes/_authenticated/route.tsx",
+    "lines": 12,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "Route"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/routes/auth.tsx",
+    "lines": 318,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "Route"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/routes/campanhas.tsx",
+    "lines": 157,
+    "tables": [
+      "campanhas"
+    ],
+    "rpc": [],
+    "exports": [
+      "Route"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/routes/index.tsx",
+    "lines": 174,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "Route"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/routes/README.md",
+    "lines": 21,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/routeTree.gen.ts",
+    "lines": 246,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "routeTree"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/server.ts",
+    "lines": 61,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "src/start.ts",
+    "lines": 31,
+    "tables": [],
+    "rpc": [],
+    "exports": [
+      "startInstance"
+    ],
+    "creates": []
+  },
+  {
+    "file": "src/styles.css",
+    "lines": 258,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "supabase/config.toml",
+    "lines": 1,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "supabase/migrations/20260909182251_868285bf-9b7c-411e-8a09-c1134cf879de.sql",
+    "lines": 164,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": [
+      "profiles",
+      "user_roles",
+      "ocorrencias",
+      "atendimentos"
+    ]
+  },
+  {
+    "file": "supabase/migrations/20260909182331_0f19cff7-cfae-4aa4-9802-583bdc2bfeb7.sql",
+    "lines": 3,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "supabase/migrations/20260909183441_15034293-1c6f-4849-993d-992274d78c58.sql",
+    "lines": 8,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "supabase/migrations/20260909185643_65229fa3-fe31-4dfa-b600-884573d70e31.sql",
+    "lines": 108,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": [
+      "campanhas",
+      "notificacoes"
+    ]
+  },
+  {
+    "file": "supabase/migrations/20260909185717_dfee2e9b-c262-48fd-8c8f-cc1a668425f6.sql",
+    "lines": 6,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "supabase/migrations/20260909190127_54fef8ef-4afc-4e6e-958e-292afa33b854.sql",
+    "lines": 1,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "supabase/migrations/20260910125527_6b3bc5ee-284a-4a15-b7eb-99222de11b5b.sql",
+    "lines": 24,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "supabase/migrations/20260911182708_1af60e33-78dc-465d-b901-b92b7c4b5ea1.sql",
+    "lines": 85,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": [
+      "rotas",
+      "rota_itens",
+      "agente_localizacoes"
+    ]
+  },
+  {
+    "file": "supabase/migrations/20260915135358_e638bdac-662f-40dd-b1af-0d21824decce.sql",
+    "lines": 1,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "supabase/migrations/20260916004812_810de3a6-28d6-47b7-bd11-4440ce59a601.sql",
+    "lines": 130,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "supabase/migrations/20260916011245_88766034-757a-4282-a96b-a539f79e1828.sql",
+    "lines": 7,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "supabase/migrations/20261007125719_d90dabe0-a4c1-41f7-b220-d8e33d998af0.sql",
+    "lines": 1,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "supabase/migrations/20261015184930_28c9a12c-d929-4a0f-8495-671c367de84e.sql",
+    "lines": 231,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": [
+      "atendimento_fotos",
+      "ocorrencia_eventos",
+      "auditoria"
+    ]
+  },
+  {
+    "file": "supabase/migrations/20261020103139_a2a746f1-fa93-47f4-85ff-30ac90af0648.sql",
+    "lines": 28,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "supabase/migrations/20261022120000_solicitacoes_cidadaos.sql",
+    "lines": 106,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": [
+      "solicitacoes_cidadaos"
+    ]
+  },
+  {
+    "file": "supabase/migrations/20261022160000_simulacao_campanhas_mapa_agente.sql",
+    "lines": 131,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": [
+      "imoveis"
+    ]
+  },
+  {
+    "file": "supabase/migrations/20261022190000_revisao_visitas.sql",
+    "lines": 158,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": [
+      "tentativas_visita"
+    ]
+  },
+  {
+    "file": "supabase/migrations/20261022200000_corrigir_exclusao_ocorrencia.sql",
+    "lines": 32,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "supabase/migrations/20261022210000_trabalho_campo.sql",
+    "lines": 327,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": [
+      "acoes_campo",
+      "visitas_campo",
+      "fichas_campo",
+      "limites_campo",
+      "laboratorio_acessos",
+      "armadilhas_campo",
+      "amostras_campo",
+      "campo_historico"
+    ]
+  },
+  {
+    "file": "supabase/migrations/20261023130000_simulacao_completa.sql",
+    "lines": 158,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "supabase/migrations/20261023160000_localidades_identificacao.sql",
+    "lines": 1009,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": [
+      "municipios",
+      "equipes_municipios"
+    ]
+  },
+  {
+    "file": "supabase/migrations/20261023170000_compatibilidade_territorios.sql",
+    "lines": 123,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "supabase/migrations/20261023171000_validacao_imoveis_visitas.sql",
+    "lines": 55,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "supabase/migrations/20261023180000_simulacao_geografia_real.sql",
+    "lines": 113,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "tsconfig.json",
+    "lines": 30,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  },
+  {
+    "file": "vite.config.ts",
+    "lines": 30,
+    "tables": [],
+    "rpc": [],
+    "exports": [],
+    "creates": []
+  }
+]

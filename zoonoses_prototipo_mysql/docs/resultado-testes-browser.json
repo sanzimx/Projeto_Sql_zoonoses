@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-06T13:54:35.842Z",
+  "base": "http://127.0.0.1:4312",
+  "viewports": [
+    "1440x1000",
+    "390x844"
+  ],
+  "checks": [
+    "acesso local direto sem login",
+    "dashboard",
+    "14 cadastros",
+    "CRUD pessoa",
+    "busca",
+    "visita preventiva",
+    "ficha e depósito",
+    "histórico",
+    "CSV",
+    "mobile"
+  ],
+  "pageErrors": [],
+  "personalDatabaseAccessed": false
+}

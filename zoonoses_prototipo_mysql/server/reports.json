@@ -1,0 +1,17 @@
+[
+  "SELECT protocolo, pontuacao, situacao\nFROM ocorrencia\nWHERE situacao IN ('Aberta', 'Em acompanhamento')\nORDER BY pontuacao DESC, aberta_em, id_ocorrencia\nLIMIT 5;",
+  "SELECT inscricao, logradouro, numero\nFROM imovel\nWHERE logradouro LIKE 'Rua S%'\nORDER BY logradouro, id_imovel;",
+  "SELECT id_ficha, id_visita, numero_tentativa, entrada_em, resultado\nFROM ficha_visita\nWHERE entrada_em BETWEEN '2026-06-05 00:00:00' AND '2026-06-10 23:59:59'\nORDER BY entrada_em, id_ficha;",
+  "SELECT DISTINCT tipo\nFROM imovel\nWHERE id_responsavel IS NOT NULL\nORDER BY tipo;",
+  "SELECT protocolo, recebida_em, descricao\nFROM solicitacao\nWHERE situacao = 'Pendente'\nORDER BY recebida_em, id_solicitacao;",
+  "SELECT p.id_pessoa, p.nome, f.matricula, f.cargo\nFROM pessoa p\nINNER JOIN profissional f ON f.id_profissional = p.id_pessoa\nWHERE f.ativo = 'S'\nORDER BY p.id_pessoa;",
+  "SELECT i.inscricao, COUNT(*) AS casos, ROUND(AVG(o.pontuacao), 2) AS pontuacao_media\nFROM imovel i\nINNER JOIN ocorrencia o ON o.id_imovel = i.id_imovel\nGROUP BY i.id_imovel, i.inscricao\nHAVING COUNT(*) > 1\nORDER BY casos DESC, i.id_imovel;",
+  "SELECT f.matricula, COUNT(*) AS rotas, SUM(r.distancia_km) AS km_total,\n       ROUND(AVG(r.distancia_km), 2) AS km_medio, MIN(r.distancia_km) AS menor_km, MAX(r.distancia_km) AS maior_km\nFROM profissional f\nINNER JOIN rota r ON r.id_profissional = f.id_profissional\nWHERE r.situacao = 'Concluida'\nGROUP BY f.id_profissional, f.matricula\nORDER BY km_total DESC, f.id_profissional;",
+  "SELECT p.nome AS profissional, m.nome AS municipio, pm.vinculado_em\nFROM pessoa p\nINNER JOIN profissional_municipio pm ON pm.id_profissional = p.id_pessoa\nINNER JOIN municipio m ON m.id_municipio = pm.id_municipio\nORDER BY p.id_pessoa, m.id_municipio;",
+  "SELECT t.nome, COUNT(DISTINCT f.id_ficha) AS tentativas,\n       SUM(d.quantidade_inspecionada) AS inspecionados,\n       SUM(d.quantidade_com_larvas) AS com_larvas, SUM(d.quantidade_eliminada) AS eliminados\nFROM tipo_deposito t\nINNER JOIN inspecao_deposito d ON d.id_tipo_deposito = t.id_tipo_deposito\nINNER JOIN ficha_visita f ON f.id_ficha = d.id_ficha\nWHERE f.resultado = 'Inspecionada'\nGROUP BY t.id_tipo_deposito, t.nome\nORDER BY inspecionados DESC, t.id_tipo_deposito;",
+  "SELECT protocolo, pontuacao, situacao\nFROM ocorrencia\nWHERE pontuacao > (SELECT AVG(pontuacao) FROM ocorrencia)\nORDER BY pontuacao DESC, id_ocorrencia;",
+  "SELECT v.codigo, v.objetivo, v.situacao\nFROM visita v\nLEFT JOIN ficha_visita f ON f.id_visita = v.id_visita\nWHERE f.id_ficha IS NULL\nORDER BY v.id_visita;",
+  "SELECT r.codigo, r.data_rota, r.situacao\nFROM rota r\nLEFT JOIN visita v ON v.id_rota = r.id_rota\nWHERE v.id_visita IS NULL\nORDER BY r.data_rota, r.id_rota;",
+  "SELECT v.codigo, f.numero_tentativa, f.resultado, r.decisao, r.retorno_previsto\nFROM visita v\nINNER JOIN ficha_visita f ON f.id_visita = v.id_visita\nINNER JOIN revisao_ficha r ON r.id_ficha = f.id_ficha\nORDER BY v.id_visita, f.numero_tentativa;",
+  "SELECT v.codigo, CASE WHEN v.id_ocorrencia IS NULL THEN 'Preventiva' ELSE 'Ocorrencia' END AS origem,\n       i.inscricao, b.nome AS bairro\nFROM visita v\nLEFT JOIN ocorrencia o ON o.id_ocorrencia = v.id_ocorrencia\nINNER JOIN imovel i ON i.id_imovel = COALESCE(o.id_imovel, v.id_imovel_preventivo)\nINNER JOIN bairro b ON b.id_bairro = i.id_bairro\nORDER BY v.id_visita;"
+]

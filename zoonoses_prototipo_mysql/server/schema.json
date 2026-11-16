@@ -1,0 +1,1236 @@
+{
+  "municipio": {
+    "label": "Municípios",
+    "columns": [
+      {
+        "name": "id_municipio",
+        "type": "INT",
+        "required": true,
+        "auto": true,
+        "pk": true,
+        "description": "Identificador interno, gerado automaticamente.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "nome",
+        "type": "VARCHAR(80)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Nome do município.",
+        "max": 80,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "uf",
+        "type": "CHAR(2)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Unidade federativa.",
+        "max": 2,
+        "choices": null,
+        "default": "MG",
+        "ref": null
+      }
+    ],
+    "keys": [
+      "id_municipio"
+    ],
+    "module": "territorio"
+  },
+  "pessoa": {
+    "label": "Pessoas",
+    "columns": [
+      {
+        "name": "id_pessoa",
+        "type": "INT",
+        "required": true,
+        "auto": true,
+        "pk": true,
+        "description": "Identificador interno, gerado automaticamente.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "nome",
+        "type": "VARCHAR(100)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Nome completo fictício.",
+        "max": 100,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "email",
+        "type": "VARCHAR(120)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Contato fictício em example.com; chave alternativa neste recorte.",
+        "max": 120,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "telefone",
+        "type": "VARCHAR(20)",
+        "required": false,
+        "auto": false,
+        "pk": false,
+        "description": "Contato opcional; sem números reais na massa.",
+        "max": 20,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "cadastrada_em",
+        "type": "DATE",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Data do cadastro.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      }
+    ],
+    "keys": [
+      "id_pessoa"
+    ],
+    "module": "pessoas"
+  },
+  "profissional": {
+    "label": "Profissionais",
+    "columns": [
+      {
+        "name": "id_profissional",
+        "type": "INT",
+        "required": true,
+        "auto": false,
+        "pk": true,
+        "description": "Identificador da pessoa que exerce função no serviço.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": "pessoa"
+      },
+      {
+        "name": "matricula",
+        "type": "VARCHAR(20)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Matrícula fictícia do servidor.",
+        "max": 20,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "cargo",
+        "type": "VARCHAR(20)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Função funcional, não implementação de autorização.",
+        "max": 20,
+        "choices": [
+          "Agente",
+          "Supervisor",
+          "Administrador"
+        ],
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "admissao",
+        "type": "DATE",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Data de admissão.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "ativo",
+        "type": "CHAR(1)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Situação funcional atual.",
+        "max": 1,
+        "choices": [
+          "S",
+          "N"
+        ],
+        "default": "S",
+        "ref": null
+      }
+    ],
+    "keys": [
+      "id_profissional"
+    ],
+    "module": "pessoas"
+  },
+  "profissional_municipio": {
+    "label": "Áreas de atuação",
+    "columns": [
+      {
+        "name": "id_profissional",
+        "type": "INT",
+        "required": true,
+        "auto": false,
+        "pk": true,
+        "description": "Profissional vinculado.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": "profissional"
+      },
+      {
+        "name": "id_municipio",
+        "type": "INT",
+        "required": true,
+        "auto": false,
+        "pk": true,
+        "description": "Território vinculado.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": "municipio"
+      },
+      {
+        "name": "vinculado_em",
+        "type": "DATE",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Data de início do vínculo atual.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      }
+    ],
+    "keys": [
+      "id_profissional",
+      "id_municipio"
+    ],
+    "module": "pessoas"
+  },
+  "bairro": {
+    "label": "Bairros",
+    "columns": [
+      {
+        "name": "id_bairro",
+        "type": "INT",
+        "required": true,
+        "auto": true,
+        "pk": true,
+        "description": "Identificador interno, gerado automaticamente.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "id_municipio",
+        "type": "INT",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Município ao qual pertence.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": "municipio"
+      },
+      {
+        "name": "nome",
+        "type": "VARCHAR(80)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Nome do bairro fictício.",
+        "max": 80,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "zona",
+        "type": "VARCHAR(10)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Zona territorial.",
+        "max": 10,
+        "choices": [
+          "Urbana",
+          "Rural"
+        ],
+        "default": null,
+        "ref": null
+      }
+    ],
+    "keys": [
+      "id_bairro"
+    ],
+    "module": "territorio"
+  },
+  "imovel": {
+    "label": "Imóveis",
+    "columns": [
+      {
+        "name": "id_imovel",
+        "type": "INT",
+        "required": true,
+        "auto": true,
+        "pk": true,
+        "description": "Identificador interno, gerado automaticamente.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "inscricao",
+        "type": "VARCHAR(20)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Código de cadastro interno, não inscrição oficial.",
+        "max": 20,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "id_bairro",
+        "type": "INT",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Bairro do imóvel.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": "bairro"
+      },
+      {
+        "name": "id_responsavel",
+        "type": "INT",
+        "required": false,
+        "auto": false,
+        "pk": false,
+        "description": "Pessoa de contato atual, quando conhecida; não presume propriedade.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": "pessoa"
+      },
+      {
+        "name": "logradouro",
+        "type": "VARCHAR(100)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Endereço fictício.",
+        "max": 100,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "numero",
+        "type": "VARCHAR(12)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Número ou S/N.",
+        "max": 12,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "complemento",
+        "type": "VARCHAR(80)",
+        "required": false,
+        "auto": false,
+        "pk": false,
+        "description": "Referência complementar.",
+        "max": 80,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "tipo",
+        "type": "VARCHAR(20)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Uso do imóvel.",
+        "max": 20,
+        "choices": [
+          "Residencial",
+          "Comercial",
+          "Terreno",
+          "Publico",
+          "Estrategico"
+        ],
+        "default": null,
+        "ref": null
+      }
+    ],
+    "keys": [
+      "id_imovel"
+    ],
+    "module": "territorio"
+  },
+  "solicitacao": {
+    "label": "Solicitações",
+    "columns": [
+      {
+        "name": "id_solicitacao",
+        "type": "INT",
+        "required": true,
+        "auto": true,
+        "pk": true,
+        "description": "Identificador interno, gerado automaticamente.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "protocolo",
+        "type": "VARCHAR(20)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Protocolo de entrada.",
+        "max": 20,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "id_solicitante",
+        "type": "INT",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Pessoa solicitante; anonimato fora do recorte.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": "pessoa"
+      },
+      {
+        "name": "id_bairro",
+        "type": "INT",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Bairro informado pelo cidadão.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": "bairro"
+      },
+      {
+        "name": "endereco_relatado",
+        "type": "VARCHAR(180)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Texto original do endereço, sujeito a confirmação.",
+        "max": 180,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "descricao",
+        "type": "VARCHAR(300)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Problema relatado.",
+        "max": 300,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "recebida_em",
+        "type": "DATETIME",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Momento de recebimento.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "situacao",
+        "type": "VARCHAR(12)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Resultado atual da triagem.",
+        "max": 12,
+        "choices": [
+          "Pendente",
+          "Convertida",
+          "Indeferida"
+        ],
+        "default": "Pendente",
+        "ref": null
+      },
+      {
+        "name": "id_analista",
+        "type": "INT",
+        "required": false,
+        "auto": false,
+        "pk": false,
+        "description": "Profissional que analisou.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": "profissional"
+      },
+      {
+        "name": "analisada_em",
+        "type": "DATETIME",
+        "required": false,
+        "auto": false,
+        "pk": false,
+        "description": "Momento da análise.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "parecer",
+        "type": "VARCHAR(200)",
+        "required": false,
+        "auto": false,
+        "pk": false,
+        "description": "Justificativa da análise.",
+        "max": 200,
+        "choices": null,
+        "default": null,
+        "ref": null
+      }
+    ],
+    "keys": [
+      "id_solicitacao"
+    ],
+    "module": "demanda"
+  },
+  "ocorrencia": {
+    "label": "Ocorrências",
+    "columns": [
+      {
+        "name": "id_ocorrencia",
+        "type": "INT",
+        "required": true,
+        "auto": true,
+        "pk": true,
+        "description": "Identificador interno, gerado automaticamente.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "protocolo",
+        "type": "VARCHAR(20)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Identificador público fictício do caso.",
+        "max": 20,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "id_solicitacao",
+        "type": "INT",
+        "required": false,
+        "auto": false,
+        "pk": false,
+        "description": "Solicitação de origem, quando houver; uma conversão por solicitação.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": "solicitacao"
+      },
+      {
+        "name": "id_imovel",
+        "type": "INT",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Imóvel confirmado para o caso.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": "imovel"
+      },
+      {
+        "name": "categoria",
+        "type": "VARCHAR(20)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Classificação operacional resumida.",
+        "max": 20,
+        "choices": [
+          "Agua parada",
+          "Residuos",
+          "Vetores",
+          "Animal sinantropico",
+          "Outros"
+        ],
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "descricao_tecnica",
+        "type": "VARCHAR(300)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Descrição técnica do problema.",
+        "max": 300,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "aberta_em",
+        "type": "DATETIME",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Data e hora de abertura.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "pontuacao",
+        "type": "INT",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Prioridade didática atribuída; não é escala clínica validada.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "situacao",
+        "type": "VARCHAR(20)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Estado atual; transições não são garantidas pelo CHECK.",
+        "max": 20,
+        "choices": [
+          "Aberta",
+          "Em acompanhamento",
+          "Concluida",
+          "Cancelada"
+        ],
+        "default": "Aberta",
+        "ref": null
+      }
+    ],
+    "keys": [
+      "id_ocorrencia"
+    ],
+    "module": "demanda"
+  },
+  "rota": {
+    "label": "Rotas",
+    "columns": [
+      {
+        "name": "id_rota",
+        "type": "INT",
+        "required": true,
+        "auto": true,
+        "pk": true,
+        "description": "Identificador interno, gerado automaticamente.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "codigo",
+        "type": "VARCHAR(20)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Identificação da rota.",
+        "max": 20,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "id_profissional",
+        "type": "INT",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Profissional responsável pelo planejamento de campo.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": "profissional"
+      },
+      {
+        "name": "data_rota",
+        "type": "DATE",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Dia planejado.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "situacao",
+        "type": "VARCHAR(12)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Situação do roteiro diário, não do caso técnico.",
+        "max": 12,
+        "choices": [
+          "Planejada",
+          "Concluida",
+          "Cancelada"
+        ],
+        "default": "Planejada",
+        "ref": null
+      },
+      {
+        "name": "distancia_km",
+        "type": "DECIMAL(7,2)",
+        "required": false,
+        "auto": false,
+        "pk": false,
+        "description": "Distância efetivamente registrada; NULL quando não medida.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      }
+    ],
+    "keys": [
+      "id_rota"
+    ],
+    "module": "campo"
+  },
+  "visita": {
+    "label": "Visitas",
+    "columns": [
+      {
+        "name": "id_visita",
+        "type": "INT",
+        "required": true,
+        "auto": true,
+        "pk": true,
+        "description": "Identificador interno, gerado automaticamente.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "codigo",
+        "type": "VARCHAR(20)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Identificador da tarefa.",
+        "max": 20,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "id_ocorrencia",
+        "type": "INT",
+        "required": false,
+        "auto": false,
+        "pk": false,
+        "description": "Caso atendido; NULL em visita preventiva.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": "ocorrencia"
+      },
+      {
+        "name": "id_imovel_preventivo",
+        "type": "INT",
+        "required": false,
+        "auto": false,
+        "pk": false,
+        "description": "Imóvel apenas quando não há ocorrência; evita duplicar o imóvel do caso.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": "imovel"
+      },
+      {
+        "name": "id_rota",
+        "type": "INT",
+        "required": false,
+        "auto": false,
+        "pk": false,
+        "description": "Rota atual ou última atribuída; não preserva o histórico de replanejamentos.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": "rota"
+      },
+      {
+        "name": "ordem_rota",
+        "type": "INT",
+        "required": false,
+        "auto": false,
+        "pk": false,
+        "description": "Posição no roteiro, quando atribuído.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "criada_em",
+        "type": "DATETIME",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Momento da criação.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "objetivo",
+        "type": "VARCHAR(200)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Finalidade da tarefa.",
+        "max": 200,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "situacao",
+        "type": "VARCHAR(20)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Situação operacional atual.",
+        "max": 20,
+        "choices": [
+          "Pendente",
+          "Agendada",
+          "Aguardando revisao",
+          "Concluida",
+          "Arquivada"
+        ],
+        "default": "Pendente",
+        "ref": null
+      }
+    ],
+    "keys": [
+      "id_visita"
+    ],
+    "module": "campo"
+  },
+  "ficha_visita": {
+    "label": "Fichas de campo",
+    "columns": [
+      {
+        "name": "id_ficha",
+        "type": "INT",
+        "required": true,
+        "auto": true,
+        "pk": true,
+        "description": "Identificador interno, gerado automaticamente.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "id_visita",
+        "type": "INT",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Tarefa à qual pertence.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": "visita"
+      },
+      {
+        "name": "numero_tentativa",
+        "type": "INT",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Número único dentro da visita; ausência de lacunas é verificada por consulta.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "id_executor",
+        "type": "INT",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Profissional que executou a tentativa, independentemente do responsável atual da rota.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": "profissional"
+      },
+      {
+        "name": "entrada_em",
+        "type": "DATETIME",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Início da tentativa.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "saida_em",
+        "type": "DATETIME",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Fim da tentativa.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "resultado",
+        "type": "VARCHAR(15)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Resultado de acesso/execução.",
+        "max": 15,
+        "choices": [
+          "Inspecionada",
+          "Fechado",
+          "Recusa",
+          "Ausente",
+          "Outro"
+        ],
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "recebido_por",
+        "type": "VARCHAR(100)",
+        "required": false,
+        "auto": false,
+        "pk": false,
+        "description": "Nome informado do acompanhante, quando houver.",
+        "max": 100,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "orientacao",
+        "type": "VARCHAR(250)",
+        "required": false,
+        "auto": false,
+        "pk": false,
+        "description": "Orientação efetivamente registrada.",
+        "max": 250,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "observacoes",
+        "type": "VARCHAR(300)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Descrição de campo.",
+        "max": 300,
+        "choices": null,
+        "default": null,
+        "ref": null
+      }
+    ],
+    "keys": [
+      "id_ficha"
+    ],
+    "module": "campo"
+  },
+  "tipo_deposito": {
+    "label": "Tipos de depósito",
+    "columns": [
+      {
+        "name": "id_tipo_deposito",
+        "type": "INT",
+        "required": true,
+        "auto": true,
+        "pk": true,
+        "description": "Identificador interno, gerado automaticamente.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "nome",
+        "type": "VARCHAR(80)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Tipo de depósito.",
+        "max": 80,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "descricao",
+        "type": "VARCHAR(200)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Definição operacional para evitar sobreposição na contagem.",
+        "max": 200,
+        "choices": null,
+        "default": null,
+        "ref": null
+      }
+    ],
+    "keys": [
+      "id_tipo_deposito"
+    ],
+    "module": "inspecao"
+  },
+  "inspecao_deposito": {
+    "label": "Inspeções de depósitos",
+    "columns": [
+      {
+        "name": "id_ficha",
+        "type": "INT",
+        "required": true,
+        "auto": false,
+        "pk": true,
+        "description": "Ficha de uma tentativa inspecionada.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": "ficha_visita"
+      },
+      {
+        "name": "id_tipo_deposito",
+        "type": "INT",
+        "required": true,
+        "auto": false,
+        "pk": true,
+        "description": "Tipo encontrado naquela tentativa.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": "tipo_deposito"
+      },
+      {
+        "name": "quantidade_inspecionada",
+        "type": "INT",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Total contado; cada depósito físico contado uma vez por tentativa.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "quantidade_com_larvas",
+        "type": "INT",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Número de depósitos com presença observada de larvas; não quantidade de larvas.",
+        "max": null,
+        "choices": null,
+        "default": "0",
+        "ref": null
+      },
+      {
+        "name": "quantidade_eliminada",
+        "type": "INT",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Número de depósitos eliminados naquela tentativa.",
+        "max": null,
+        "choices": null,
+        "default": "0",
+        "ref": null
+      },
+      {
+        "name": "acao",
+        "type": "VARCHAR(200)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Medida registrada, sem prescrição química no recorte.",
+        "max": 200,
+        "choices": null,
+        "default": null,
+        "ref": null
+      }
+    ],
+    "keys": [
+      "id_ficha",
+      "id_tipo_deposito"
+    ],
+    "module": "inspecao"
+  },
+  "revisao_ficha": {
+    "label": "Revisões",
+    "columns": [
+      {
+        "name": "id_ficha",
+        "type": "INT",
+        "required": true,
+        "auto": false,
+        "pk": true,
+        "description": "Chave compartilhada com a ficha revisada.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": "ficha_visita"
+      },
+      {
+        "name": "id_revisor",
+        "type": "INT",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Profissional responsável pela análise.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": "profissional"
+      },
+      {
+        "name": "revisada_em",
+        "type": "DATETIME",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Momento da decisão.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "decisao",
+        "type": "VARCHAR(10)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Encaminhamento da tentativa.",
+        "max": 10,
+        "choices": [
+          "Retornar",
+          "Arquivar"
+        ],
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "parecer",
+        "type": "VARCHAR(250)",
+        "required": true,
+        "auto": false,
+        "pk": false,
+        "description": "Justificativa.",
+        "max": 250,
+        "choices": null,
+        "default": null,
+        "ref": null
+      },
+      {
+        "name": "retorno_previsto",
+        "type": "DATE",
+        "required": false,
+        "auto": false,
+        "pk": false,
+        "description": "Data sugerida para retorno; não cria rota automaticamente.",
+        "max": null,
+        "choices": null,
+        "default": null,
+        "ref": null
+      }
+    ],
+    "keys": [
+      "id_ficha"
+    ],
+    "module": "inspecao"
+  }
+}

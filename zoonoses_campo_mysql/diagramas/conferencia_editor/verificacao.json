@@ -1,0 +1,46 @@
+{
+  "editor": "https://app.diagrams.net/",
+  "browser": "Chrome headless, fresh isolated session",
+  "checks": [
+    {
+      "page": "01 · DER completo",
+      "tables": 14,
+      "relationships": 21,
+      "texts": 301,
+      "width": 4133,
+      "height": 1728,
+      "zoom": "100%",
+      "attributes": "all present; names/types fit measured columns"
+    },
+    {
+      "page": "02 · Território e pessoas",
+      "tables": 6,
+      "relationships": 6,
+      "texts": 104,
+      "width": 2327,
+      "height": 733,
+      "zoom": "100%",
+      "attributes": "all present; names/types fit measured columns"
+    },
+    {
+      "page": "03 · Demanda e programação",
+      "tables": 8,
+      "relationships": 12,
+      "texts": 192,
+      "width": 2929,
+      "height": 1023,
+      "zoom": "100%",
+      "attributes": "all present; names/types fit measured columns"
+    },
+    {
+      "page": "04 · Tentativas e inspeções",
+      "tables": 6,
+      "relationships": 6,
+      "texts": 131,
+      "width": 1941,
+      "height": 912,
+      "zoom": "100%",
+      "attributes": "all present; names/types fit measured columns"
+    }
+  ]
+}

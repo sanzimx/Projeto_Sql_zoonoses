@@ -1,0 +1,16 @@
+codigo,numero_tentativa,resultado,decisao,retorno_previsto
+VIS-2026-0001,1,Fechado,Retornar,2026-06-01
+VIS-2026-0002,1,Ausente,Retornar,2026-06-02
+VIS-2026-0003,1,Fechado,Retornar,2026-06-03
+VIS-2026-0004,1,Ausente,Retornar,2026-06-04
+VIS-2026-0005,1,Fechado,Retornar,2026-06-05
+VIS-2026-0006,1,Ausente,Retornar,2026-06-06
+VIS-2026-0007,1,Fechado,Retornar,2026-06-07
+VIS-2026-0008,1,Ausente,Retornar,2026-06-08
+VIS-2026-0009,1,Fechado,Retornar,2026-06-09
+VIS-2026-0010,1,Ausente,Retornar,2026-06-10
+VIS-2026-0031,1,Fechado,Retornar,2026-06-19
+VIS-2026-0032,1,Ausente,Retornar,2026-06-20
+VIS-2026-0033,1,Fechado,Retornar,2026-06-21
+VIS-2026-0034,1,Ausente,Arquivar,
+VIS-2026-0035,1,Fechado,Arquivar,
