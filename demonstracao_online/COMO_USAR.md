@@ -24,11 +24,9 @@ O primeiro bloco, que cria e preenche as tabelas, está recolhido para facilitar
 - Para ampliar no datashow, use Ctrl e + no navegador; Ctrl e 0 restaura o tamanho.
 - Teste a internet do local antes. Os arquivos SQL desta pasta são uma cópia de reserva, mas a execução online depende de internet.
 
-## Arquivos de reserva
+## Scripts
 
-- `01_preparar_banco_online.sql`: cria e preenche as tabelas no ambiente online.
-- `02_consultas_online.sql`: consultas Q01 a Q15.
-- `03_verificacao_online.sql`: verificações de consistência.
-- `resultado_online.md`: resultados obtidos na execução de conferência.
+- [Preparar banco online](01_preparar_banco_online.sql): cria e preenche tabelas em um banco vazio já selecionado.
+- [Consultas](../zoonoses_campo_mysql/sql/02_consultas.sql) e [verificação](../zoonoses_campo_mysql/sql/03_verificacao.sql): versões principais. Para outro nome de banco, adapte o comando USE antes de executar.
 
 Conferido em MySQL 8.0.46: 14 tabelas, 513 registros iniciais e 15 consultas executadas. As 15 verificações de inconsistência retornaram vazias, como esperado.

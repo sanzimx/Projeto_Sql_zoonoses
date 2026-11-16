@@ -209,13 +209,19 @@ Laboratório, armadilhas, fotos, campanhas, mapa, autenticação, auditoria comp
 
 ## DER físico
 
-![DER físico completo](diagramas/der_completo.png)
+[DER editável completo](diagramas/DER.drawio)
+
+![Território e pessoas](diagramas/territorio_pessoas.png)
+
+![Demanda e visitas](diagramas/demanda_visitas.png)
+
+![Tentativas e inspeção](diagramas/tentativas_inspecao.png)
 
 O desenho mostra todas as tabelas e colunas. PK indica chave primária, FK referência e UQ unicidade simples. As regras compostas completas estão no dicionário. Perto do pai, a cardinalidade informa quantos pais cada filho pode ter; perto do filho, quantos filhos cada pai pode ter. 0..1 é opcional unitário; 0..N é opcional múltiplo; 1 é obrigatório unitário. FK não obriga um pai a possuir filhos.
 
 Pessoa–Profissional e Ficha–Revisão são 1:0..1. As duas N:N são resolvidas pelas associativas. Município–Bairro, Bairro–Imóvel, Pessoa–Solicitação, Imóvel–Ocorrência, Profissional–Rota e Visita–Ficha são exemplos 1:N. Os vínculos opcionais de alvo da visita são exclusivos; cada linha isolada não expressa essa regra conjunta.
 
-O editável está em diagramas/zoonoses_campo.drawio. GUIA_DRAWIO.md orienta a construção manual. A imagem deriva da mesma definição dos scripts, não de engenharia reversa de MySQL executado.
+O editável está em diagramas/DER.drawio. GUIA_DRAWIO.md orienta a construção manual. A imagem deriva da mesma definição dos scripts, não de engenharia reversa de MySQL executado.
 
 ## Dicionário de dados
 
@@ -1095,7 +1101,7 @@ Consulta documental em 27/10/2026. Assistência de IA utilizada na preparação 
 
 ## Revisão visual do DER — 05/11/2026
 
-As quatro páginas do DER foram corrigidas no arquivo [editável revisado](diagramas/zoonoses_campo_revisado.drawio). Cada entidade agora possui cabeçalho e três colunas com células independentes: Chave, Atributo e Tipo. Os nomes, tipos e as 21 relações do modelo completo foram preservados. As imagens incorporadas acima foram substituídas pelas imagens geradas a partir da renderização real no Draw.io. Consulte o [registro da conferência](diagramas/conferencia_editor/VALIDACAO_DIAGRAMA.md).
+As quatro páginas do DER foram corrigidas no arquivo [editável revisado](diagramas/DER.drawio). Cada entidade agora possui cabeçalho e três colunas com células independentes: Chave, Atributo e Tipo. Os nomes, tipos e as 21 relações do modelo completo foram preservados. As imagens incorporadas acima foram substituídas pelas imagens geradas a partir da renderização real no Draw.io. Consulte o [diagramas editáveis](diagramas/DER.drawio).
 
 Atualização recebida no chat: MySQL 8.0.46 instalado e scripts 01/03/02 executados pelo usuário; imagens confirmaram 14 tabelas/513 registros e rejeições T01–T03. Os demais testes e as contagens após testes foram relatados pelo usuário. Não se afirma verificação individual dos demais testes nesta revisão visual. As notas de ausência do motor registram a situação anterior.
 
@@ -1107,7 +1113,7 @@ Junto a visita consta: “Exatamente um alvo: ocorrência OU imóvel preventivo.
 
 As notas acrescentam 25 pixels por linha à altura das caixas. Para reproduzir as posições e alturas finais, use o editável revisado como referência; as coordenadas anteriores deste documento descrevem a base anterior às notas.
 
-O XML e as imagens finais foram conferidos nesta conclusão. A evidência de abertura no Draw.io em conferencia_editor registra a sessão anterior; não houve nova sessão interativa do editor nesta etapa. As notas e rótulos estão presentes nos PNG/SVG atuais, inclusive no detalhe de tentativas inspecionado visualmente.
+O XML e as imagens finais foram conferidos nesta conclusão. A conferência visual foi registrada durante a preparação; não houve nova sessão interativa do editor nesta etapa. As notas e rótulos estão presentes nos PNG/SVG atuais, inclusive no detalhe de tentativas inspecionado visualmente.
 
 ## Protótipo funcional e teste isolado — 06/11/2026
 

@@ -1,6 +1,6 @@
 # Validação realizada e limites
 
-**Atualização posterior à conferência inicial:** o diagrama foi corrigido e validado no Draw.io real em 05/11/2026. Veja [evidências da revisão visual](diagramas/conferencia_editor/VALIDACAO_DIAGRAMA.md). O chat também informa MySQL 8.0.46 instalado, carga de 14 tabelas/513 registros e imagens dos testes T01–T03; os demais testes foram relatados pelo usuário. As notas abaixo sobre ausência do motor e ausência de abertura no editor são registros anteriores a essas atualizações.
+**Atualização posterior à conferência inicial:** o diagrama foi corrigido e validado no Draw.io real em 05/11/2026. Veja [diagramas editáveis](diagramas/DER.drawio). O chat também informa MySQL 8.0.46 instalado, carga de 14 tabelas/513 registros e imagens dos testes T01–T03; os demais testes foram relatados pelo usuário. As notas abaixo sobre ausência do motor e ausência de abertura no editor são registros anteriores a essas atualizações.
 
 Data: 27/10/2026.
 

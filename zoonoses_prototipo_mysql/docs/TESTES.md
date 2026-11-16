@@ -1,6 +1,6 @@
 # Validação — 06/11/2026
 
-Executados novamente: `npm.cmd test` (7 testes aprovados, incluindo modo local direto, CSRF/origem e preservação de caracteres especiais na configuração), `npm.cmd run build`, `npm.cmd run test:mysql` (12 grupos aprovados) e `node scripts/test-browser.cjs` (Chrome real headless, desktop 1440×1000 e móvel 390×844). Resultados estruturados e capturas estão nesta pasta.
+Executados novamente: `npm.cmd test` (7 testes aprovados, incluindo modo local direto, CSRF/origem e preservação de caracteres especiais na configuração), `npm.cmd run build`, `npm.cmd run test:mysql` (12 grupos aprovados) e `node scripts/test-browser.cjs` (Chrome real headless, desktop 1440×1000 e móvel 390×844). Os resultados estruturados estão nesta pasta; capturas podem ser geradas pelos testes.
 
 O teste MySQL confirma versão 8.0.46, massa inicial de 14 tabelas/513 registros, login/CSRF, cadastros, 15 relatórios, conversão, rota, tentativa sem acesso, revisão, retorno com inspeção, conclusão, concorrência e rollback. Ao final, as 15 consultas de coerência retornam vazias. O teste de navegador percorre as 14 telas de dados, cria/edita pessoa, busca, registra visita preventiva com inspeção, verifica histórico, exporta CSV e verifica navegação e largura móvel. O ciclo completo de revisão/retorno é coberto pela API; o navegador cobre o caminho de inspeção preventiva.
 

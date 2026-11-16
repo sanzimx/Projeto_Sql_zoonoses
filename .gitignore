@@ -12,3 +12,10 @@ dist/
 backups/
 .review_ppt/
 .publicacao_github/
+
+# Evidências geradas e cópias de trabalho
+**/docs/capturas/
+**/docs/inventario_fonte.json
+**/diagramas/conferencia_editor/
+.repositorio_limpo/
+.publicacao*/

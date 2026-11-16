@@ -364,16 +364,22 @@ R10 tem 0..1 nas duas pontas: solicitação pode não gerar ocorrência e ocorr�
 31. Coloque a imagem em **diagramas/**. O relatório já contém:
 
 ```markdown
-![DER físico completo](diagramas/der_completo.png)
+[DER editável completo](diagramas/DER.drawio)
+
+![Território e pessoas](diagramas/territorio_pessoas.png)
+
+![Demanda e visitas](diagramas/demanda_visitas.png)
+
+![Tentativas e inspeção](diagramas/tentativas_inspecao.png)
 ```
 
 32. Exporte os detalhes se quiser usá-los na apresentação. Sempre atualize SQL, dicionário, guia e imagens juntos ao mudar o modelo.
 
 ## 11. Abrir o arquivo pronto
 
-Use **Arquivo → Abrir de → Dispositivo / File → Open From → Device** e selecione **diagramas/zoonoses_campo_revisado.drawio**. Há quatro páginas. As caixas e linhas são objetos editáveis, não imagem colada. Salve o exercício manual com outro nome para comparar.
+Use **Arquivo → Abrir de → Dispositivo / File → Open From → Device** e selecione **diagramas/DER.drawio**. Há quatro páginas. As caixas e linhas são objetos editáveis, não imagem colada. Salve o exercício manual com outro nome para comparar.
 
-O arquivo zoonoses_campo.drawio também foi atualizado com o mesmo conteúdo. As quatro páginas foram abertas no Draw.io real, no Chrome, com conferência a 100%. Os PNG/SVG foram obtidos do SVG efetivamente renderizado pelo editor. Capturas da interface ficam em diagramas/conferencia_editor/. Para distinguir do arquivo antigo já aberto, use Arquivo → Abrir de → Dispositivo e escolha zoonoses_campo_revisado.drawio; não apenas atualize a aba antiga.
+O arquivo zoonoses_campo.drawio também foi atualizado com o mesmo conteúdo. As quatro páginas foram abertas no Draw.io real, no Chrome, com conferência a 100%. Os PNG/SVG foram obtidos do SVG efetivamente renderizado pelo editor. As capturas de revisão não são versionadas. Para distinguir do arquivo antigo já aberto, use Arquivo → Abrir de → Dispositivo e escolha zoonoses_campo_revisado.drawio; não apenas atualize a aba antiga.
 
 ## Referências do editor
 
@@ -390,4 +396,4 @@ Junto a visita consta: “Exatamente um alvo: ocorrência OU imóvel preventivo.
 
 As notas acrescentam 25 pixels por linha à altura das caixas. Para reproduzir as posições e alturas finais, use o editável revisado como referência; as coordenadas anteriores deste documento descrevem a base anterior às notas.
 
-O XML e as imagens finais foram conferidos nesta conclusão. A evidência de abertura no Draw.io em conferencia_editor registra a sessão anterior; não houve nova sessão interativa do editor nesta etapa. As notas e rótulos estão presentes nos PNG/SVG atuais, inclusive no detalhe de tentativas inspecionado visualmente.
+O XML e as imagens finais foram conferidos nesta conclusão. A conferência visual foi registrada durante a preparação; não houve nova sessão interativa do editor nesta etapa. As notas e rótulos estão presentes nos PNG/SVG atuais, inclusive no detalhe de tentativas inspecionado visualmente.
