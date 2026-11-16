@@ -3,7 +3,7 @@
 Projeto acadêmico com modelagem relacional, SQL para MySQL e protótipo de trabalho de campo. Todos os dados de exemplo são fictícios.
 
 - [Protótipo online](https://zoonoses.alwaysdata.net/) — acesso de operador necessário; banco MariaDB.
-- [Consultas em MySQL 8.0](https://dbfiddle.uk/3TarkRBS?hide=131073) — demonstração SQL independente do protótipo.
+- [Consultas em MySQL 8.0](https://phpmyadmin.alwaysdata.com/) — demonstração SQL independente do protótipo.
 
 ## Conteúdo
 
